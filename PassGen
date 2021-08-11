@@ -1,0 +1,9 @@
+import random
+size = random.randint(14,25)
+lower = ("abcdefghijklmnopqrstuvwxyz")
+upper = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+numbers = ("0123456789")
+symbols = ("!£$%^&*@+-=<>~()[];:/_,")
+all = lower + upper + numbers + symbols
+password = "".join(random.sample(all,size))
+print(password)
