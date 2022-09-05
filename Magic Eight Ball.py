@@ -26,17 +26,20 @@ print("")
 print("")
 print("By Marco Waisman-Garzon")
 print("")
+#Phrases to Run Through
+#
 eight_ball = [ "It is certain", "It is decidedly so", "Without a doubt", "Yes, definitely",
                "You may rely on it", "As I see it, yes", "Most Likely", "Outlook Good",
                "Yes", "Signs point to yes", "Reply hazy, try again", "Ask again later",
                "Better not tell you now", "Cannot predict now", "Concentrate and ask again",
                "Don't count on it", "My reply is no", "My sources say no", "Outlook not so good", "Very Doubtful","Fuck off",
                "Ask a normal question","Does a bear shit in the woods?","I'm not sober enough to answer", "Well, D'uh", "Low Battery"
-               "Yaaaaas bitch", "When birds fly", "The future is dissapointing for you", "I'm not a psychic", "Good vibes your way","Shut up nerd"
+               "Yaaaaas queen", "When birds fly", "The future is dissapointing for you", "I'm not a psychic", "Good vibes your way","Shut up nerd"
                ,"Maybe if you tried again it might work","Sorry it was too dark, what did you say?", "Huh?", "Type like a human and I'll answer",
                "I only answer questions from tall people", "Nope, unlucky short king", "Sadly Yes","I can safely say...","Shush I'm waiting for an adult to ask me something"
                ,"Uh Oh Spaghetti-o's","Tut tut, looks like no","Yes,if yes meant no","Only on days ending in y","Speak up, couldn't hear you", "I was distracted, try again",
                "No, but I can offer you some soup?"]
+#Create Question
 def question():
     question = input("Ask your yes or no question and the Magic 8 Ball will respond!\n")
     print("")
@@ -45,7 +48,8 @@ def question():
     time.sleep(random.randrange(0,5))
     print(random.choice(eight_ball))
     print("")
-while True:
+#Gamestate
+    while True:
     question()
     repeat = input("Would you like to ask another question? (Y or N)")
     print("")
